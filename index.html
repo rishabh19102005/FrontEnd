@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Groups - Online Discussion Platform</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="script1.js" defer></script>
+    <script defer>
+        document.addEventListener("DOMContentLoaded", function () {
+            const toggleButton = document.getElementById("theme-toggle");
+            const body = document.body;
+            
+            if (localStorage.getItem("theme") === "dark") {
+                body.classList.add("dark");
+            }
+
+            toggleButton.addEventListener("click", function () {
+                body.classList.toggle("dark");
+                if (body.classList.contains("dark")) {
+                    localStorage.setItem("theme", "dark");
+                } else {
+                    localStorage.setItem("theme", "light");
+                }
+            });
+        });
+    </script>
+    <style>
+        .dark {
+            background-color: rgb(123, 163, 244);
+            color: hwb(0 100% 0%);
+        }
+        .dark nav {
+            background-color: hwb(226 21% 9%);
+        }
+        .dark .bg-white {
+            background-color: #2d3748;
+            color: hwb(197 75% 22%);
+        }
+        .dark .bg-gray-200 {
+            background-color: #a5c1f2;
+        }
+    </style>
+    
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-blue-600 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-white text-xl font-bold">Study Groups</a>
+            <div class="space-x-4">
+                <a href="index.html" class="text-white ">Home</a>
+                <a href="about.html" class="text-white">About</a>
+                <a href="groups.html" class="text-white">Groups</a>
+                <a href="discussions.html" class="text-white">Discussions</a>
+                <a href="resources.html" class="text-white">Resources</a>
+                <!-- <a href="about.html" class="text-white">About</a> -->
+                <a href="contact.html" class="text-white">Contact</a>
+                <a href="login.html" class="text-white">Login</a>
+                <a href="register.html" class="text-white">Register</a>
+                <button id="theme-toggle" class="text-white bg-blue-800 px-4 py-2 rounded">Toggle Theme</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-blue-500 text-white text-center py-16">
+        <h1 class="text-4xl font-bold">Join the Best Online Study Groups</h1>
+        <p class="mt-2 text-lg">Collaborate, discuss, and learn with students worldwide.</p>
+        <a href="register.html" class="mt-4 inline-block bg-white text-blue-600 font-semibold py-2 px-6 rounded-lg shadow-lg hover:bg-gray-200">Get Started</a>
+    </header>
+
+    <!-- Features Section -->
+    <section class="container mx-auto my-12 text-center">
+        <h2 class="text-3xl font-bold text-gray-800">Why Join Us?</h2>
+        <div class="flex flex-wrap justify-center mt-6 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow-md w-64 ">
+                <h3 class="text-xl font-bold">Live Discussions</h3>
+                <p class="mt-2 text-gray-600">Engage in real-time conversations with peers.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md w-64 ">
+                <h3 class="text-xl font-bold">Study Resources</h3>
+                <p class="mt-2 text-gray-600">Access free study materials and notes.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md w-64">
+                <h3 class="text-xl font-bold">Expert Mentors</h3>
+                <p class="mt-2 text-gray-600">Learn from industry professionals and educators.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md w-64">
+                <h3 class="text-xl font-bold">Mock Tests</h3>
+                <p class="mt-2 text-gray-600">Test your knowledge with quizzes and mock exams.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events -->
+    <section class="bg-gray-200 py-12 text-center">
+        <h2 class="text-3xl font-bold text-gray-800">Upcoming Events</h2>
+        <div class="mt-6 flex justify-center gap-6">
+            <div class="bg-white p-4 rounded-lg shadow-md w-72">
+                <h3 class="text-lg font-semibold">Web Development Bootcamp</h3>
+                <p class="text-gray-600">April 15, 2025 | 5 PM</p>
+                <a href="webEvents.html" class="text-blue-600 font-semibold">Join Now</a>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md w-72">
+                <h3 class="text-lg font-semibold">AI & ML Workshop</h3>
+                <p class="text-gray-600">April 22, 2025 | 6 PM</p>
+                <a href="AIevents2.html" class="text-blue-600 font-semibold">Register</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="container mx-auto my-12 text-center">
+        <h2 class="text-3xl font-bold text-gray-800">What Our Users Say</h2>
+        <div class="mt-6 flex justify-center gap-6">
+            <div class="bg-white p-6 rounded-lg shadow-md w-64">
+                <p class="text-gray-600">"This platform helped me ace my exams!"</p>
+                <h3 class="mt-2 font-semibold">- Riya Thakur</h3>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md w-64">
+                <p class="text-gray-600">"Best place to discuss complex problems!"</p>
+                <h3 class="mt-2 font-semibold">- Shivam Kumar</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="bg-gray-200 py-12 text-center">
+        <h2 class="text-3xl font-bold text-gray-800">Frequently Asked Questions</h2>
+        <div class="mt-6 space-y-4">
+            <div class="bg-white p-4 rounded-lg shadow-md w-3/4 mx-auto">
+                <h3 class="text-lg font-semibold">How do I join a study group?</h3>
+                <p class="text-gray-600">Sign up and browse available groups to join discussions.</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md w-3/4 mx-auto">
+                <h3 class="text-lg font-semibold">Is it free to use?</h3>
+                <p class="text-gray-600">Yes! You can join and participate for free.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Subscription -->
+    <section class="container mx-auto my-12 text-center">
+        <h2 class="text-3xl font-bold text-gray-800">Stay Updated</h2>
+        <p class="mt-2 text-gray-600">Subscribe to our newsletter for the latest updates.</p>
+        <form class="mt-4 flex justify-center">
+            <input type="email" placeholder="Enter your email" class="p-2 rounded-l-lg border border-gray-300">
+            <button class="bg-blue-600 text-white p-2 rounded-r-lg">Subscribe</button>
+        </form>
+    </section>
+
+        
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white text-center py-4">
+        <p>&copy; 2025 Study Groups | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

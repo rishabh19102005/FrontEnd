@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Study Groups</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="script2.js" defer></script>
+</head>
+<body class="bg-gradient-to-br from-blue-500 to-purple-600 min-h-screen flex items-center justify-center">
+    <div class="bg-white p-8 rounded-xl shadow-2xl w-full max-w-md">
+        <h2 class="text-3xl font-bold text-center text-gray-800">Join Study Groups</h2>
+        <p class="text-gray-500 text-center mb-6">Create an account to collaborate and learn!</p>
+        <form action="#" method="POST">
+            <div class="mb-4 relative">
+                <label for="name" class="block text-gray-600 font-medium">Name</label>
+                <input type="text" id="name" name="name" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none">
+                <i class="fas fa-user absolute right-3 top-10 text-gray-400"></i>
+            </div>
+            <div class="mb-4 relative">
+                <label for="email" class="block text-gray-600 font-medium">Email</label>
+                <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none">
+                <i class="fas fa-envelope absolute right-3 top-10 text-gray-400"></i>
+            </div>
+            <div class="mb-4 relative">
+                <label for="password" class="block text-gray-600 font-medium">Password</label>
+                <input type="password" id="password" name="password" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none">
+                <i class="fas fa-lock absolute right-3 top-10 text-gray-400"></i>
+            </div>
+            <div class="mb-4">
+                <label for="course" class="block text-gray-600 font-medium">Select Course</label>
+                <select id="course" name="course" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none">
+                    <option value="free">Free Course</option>
+                    <option value="basic">Basic Plan - $10/month</option>
+                    <option value="premium">Premium Plan - $25/month</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label class="inline-flex items-center">
+                    <input type="checkbox" class="form-checkbox text-blue-500" required>
+                    <span class="ml-2 text-gray-600">I agree to the <a href="#" class="text-blue-500 hover:underline">Terms & Conditions</a></span>
+                </label>
+            </div>
+            <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition duration-300">Register</button>
+        </form>
+        <p class="text-center text-gray-600 mt-4">Already have an account? <a href="login.html" class="text-blue-500 hover:underline">Login</a></p>
+    </div>
+</body>
+</html>

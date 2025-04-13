@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groups - Study Groups</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="script1.js" defer></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-blue-600 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-white text-lg font-bold">Study Groups</a>
+            <div class="space-x-4">
+                <a href="index.html" class="text-white">Home</a>
+                <a href="groups.html" class="text-white">Groups</a>
+                <a href="discussions.html" class="text-white">Discussions</a>
+                <a href="resources.html" class="text-white">Resources</a>
+                <a href="about.html" class="text-white">About</a>
+                <a href="contact.html" class="text-white">Contact</a>
+                <a href="login.html" class="text-white">Login</a>
+                <a href="register.html" class="text-white">Register</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mx-auto mt-8">
+        <h1 class="text-3xl font-bold text-center">Groups</h1>
+        <p class="text-center mt-4">Join a study group and start collaborating.</p>
+        <p class="text-center mt-2">Connect with peers via video calls, group chat, and shared study sessions.</p>
+        
+        <!-- Group Features -->
+        <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white p-4 shadow rounded-lg text-center">
+                <h2 class="text-xl font-semibold">Video Calls</h2>
+                <p class="mt-2 text-gray-600">Join live study sessions with video conferencing.</p>
+                <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded">
+                    <a href="videoCall.html">Join Now</a>
+                </button>
+            </div>
+            
+            <div class="bg-white p-4 shadow rounded-lg text-center">
+                <h2 class="text-xl font-semibold">Group Chat</h2>
+                <p class="mt-2 text-gray-600">Discuss topics in real-time with your group.</p>
+                <button class="mt-4 bg-green-500 text-white px-4 py-2 rounded">
+                    <a href="GroupChat.html">Chat Now</a>
+                </button>
+            </div>
+            
+            <div class="bg-white p-4 shadow rounded-lg text-center">
+                <h2 class="text-xl font-semibold">Study Resources</h2>
+                <p class="mt-2 text-gray-600">Share and access notes, PDFs, and links.</p>
+                <button class="mt-4 bg-purple-500 text-white px-4 py-2 rounded">Explore</button>
+            </div>
+        </div>
+
+        <!-- Additional Features -->
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white p-4 shadow rounded-lg text-center">
+                <h2 class="text-xl font-semibold">Task Management</h2>
+                <p class="mt-2 text-gray-600">Assign and track study tasks within your group.</p>
+                <button class="mt-4 bg-yellow-500 text-white px-4 py-2 rounded">Manage Tasks</button>
+            </div>
+            
+            <div class="bg-white p-4 shadow rounded-lg text-center">
+                <h2 class="text-xl font-semibold">Event Scheduling</h2>
+                <p class="mt-2 text-gray-600">Plan group meetings and study sessions with ease.</p>
+                <button class="mt-4 bg-red-500 text-white px-4 py-2 rounded">Schedule Now</button>
+            </div>
+            
+            <div class="bg-white p-4 shadow rounded-lg text-center">
+                <h2 class="text-xl font-semibold">Peer Mentoring</h2>
+                <p class="mt-2 text-gray-600">Find a mentor or become one to help others.</p>
+                <button class="mt-4 bg-green-500 text-white px-4 py-2 rounded">Find a Mentor</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

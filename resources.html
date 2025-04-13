@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - Study Groups</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="script2.js" defer></script>
+</head>
+<body class="bg-gray-100">
+    
+    <!-- Navigation Bar -->
+    <nav class="bg-blue-600 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-white text-lg font-bold">Study Groups</a>
+            <div class="space-x-4">
+                <a href="index.html" class="text-white">Home</a>
+                <a href="groups.html" class="text-white">Groups</a>
+                <a href="discussions.html" class="text-white">Discussions</a>
+                <a href="resources.html" class="text-white">Resources</a>
+                <a href="about.html" class="text-white">About</a>
+                <a href="contact.html" class="text-white">Contact</a>
+                <a href="login.html" class="text-white">Login</a>
+                <a href="register.html" class="text-white">Register</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mx-auto mt-8 p-4">
+        <h1 class="text-3xl font-bold text-center">Resources</h1>
+        <p class="text-center mt-4">Access study materials and contribute your own.</p>
+        
+        <!-- Search Bar -->
+        <div class="mt-6 flex justify-center">
+            <input type="text" placeholder="Search for resources..." class="w-1/2 p-2 border rounded">
+        </div>
+        
+        <!-- Categories -->
+        <div class="mt-4 flex justify-center space-x-4">
+            <button class="bg-blue-500 text-white px-4 py-2 rounded">Notes</button>
+            <button class="bg-green-500 text-white px-4 py-2 rounded">Books</button>
+            <button class="bg-yellow-500 text-white px-4 py-2 rounded">Videos</button>
+            <button class="bg-red-500 text-white px-4 py-2 rounded">Articles</button>
+        </div>
+
+        <!-- Resource List -->
+        <div class="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white p-4 shadow rounded">
+                <h2 class="text-xl font-bold">Introduction to Algorithms</h2>
+                <p class="text-sm mt-2">Comprehensive guide on algorithms and data structures.</p>
+                <a href="#" class="text-blue-600 mt-2 block">Download</a>
+            </div>
+            <div class="bg-white p-4 shadow rounded">
+                <h2 class="text-xl font-bold">Machine Learning Basics</h2>
+                <p class="text-sm mt-2">Learn the fundamentals of machine learning with this book.</p>
+                <a href="#" class="text-blue-600 mt-2 block">View</a>
+            </div>
+            <div class="bg-white p-4 shadow rounded">
+                <h2 class="text-xl font-bold">JavaScript Tutorial</h2>
+                <p class="text-sm mt-2">Step-by-step tutorial to learn JavaScript programming.</p>
+                <a href="#" class="text-blue-600 mt-2 block">Watch</a>
+            </div>
+        </div>
+
+        <!-- Upload Section -->
+        <div class="mt-8 bg-white p-6 shadow rounded">
+            <h2 class="text-2xl font-bold">Upload a Resource</h2>
+            <p class="text-sm mt-2">Share your notes, books, or useful links.</p>
+            <input type="file" class="block mt-4 border p-2 w-full">
+            <button class="bg-blue-600 text-white px-4 py-2 mt-4 rounded">Upload</button>
+        </div>
+
+        <!-- Discussion Section -->
+        <div class="mt-8 bg-white p-6 shadow rounded">
+            <h2 class="text-2xl font-bold">Resource Discussions</h2>
+            <p class="text-sm mt-2">Discuss and share insights on study materials.</p>
+            <textarea class="w-full border p-2 mt-4" placeholder="Post your questions or comments..."></textarea>
+            <button class="bg-green-600 text-white px-4 py-2 mt-2 rounded">Post</button>
+            <div class="mt-4">
+                <div class="bg-gray-200 p-4 rounded mt-2">
+                    <p><strong>Prof. Ishita Malhotra:</strong> This algorithm book is really helpful for interviews!</p>
+                </div>
+                <div class="bg-gray-200 p-4 rounded mt-2">
+                    <p><strong>Vaibhav:</strong> Does anyone have notes on dynamic programming?</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Popular Resources -->
+        <div class="mt-8 bg-white p-6 shadow rounded">
+            <h2 class="text-2xl font-bold">Popular Resources</h2>
+            <ul class="mt-4 space-y-2">
+                <li><a href="#" class="text-blue-600">Data Structures & Algorithms Notes</a></li>
+                <li><a href="#" class="text-blue-600">Python Programming for Beginners</a></li>
+                <li><a href="#" class="text-blue-600">Operating Systems Lecture Series</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

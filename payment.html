@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI & ML Workshop - Payment</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Payment Section -->
+    <section class="container mx-auto p-8">
+        <h2 class="text-3xl font-semibold text-center text-purple-700">Secure Your Spot</h2>
+        <p class="text-center text-gray-600 mt-2">Complete your payment to confirm your registration for the Interesting Course.</p>
+        <div class="bg-white p-6 shadow rounded-lg max-w-lg mx-auto mt-6">
+            <h3 class="text-xl font-semibold mb-4">Payment Details</h3>
+            <div class="mb-4">
+                <p class="font-semibold">Workshop Fee:</p>
+                <p class="text-gray-700">Rs. 499</p>
+            </div>
+            <form>
+                <label class="block font-semibold">Card holder Name</label>
+                <input type="text" class="w-full p-2 border rounded mt-1" placeholder="Enter your name" required>
+                
+                <label class="block font-semibold mt-4">Card Number</label>
+                <input type="text" class="w-full p-2 border rounded mt-1" placeholder="**** **** **** ****" required>
+                
+                <div class="flex gap-4 mt-4">
+                    <div class="w-1/2">
+                        <label class="block font-semibold">Expiration Date</label>
+                        <input type="text" class="w-full p-2 border rounded mt-1" placeholder="MM/YY" required>
+                    </div>
+                    <div class="w-1/2">
+                        <label class="block font-semibold">CVV</label>
+                        <input type="text" class="w-full p-2 border rounded mt-1" placeholder="123" required>
+                    </div>
+                </div>
+                
+                <button type="submit" class="bg-purple-600 text-white px-4 py-2 rounded mt-6 w-full font-semibold">Make Payment</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-purple-600 text-white text-center py-4 mt-10">
+        <p>&copy; 2025 Workshop And Event | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
